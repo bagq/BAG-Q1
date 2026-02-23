@@ -18,7 +18,6 @@ function updateLocation() {
 
                 marker.setLatLng([userLat, userLng]);
                 map.setView([userLat, userLng], 15);
-                alert("Location updated!");
             },
             (error) => {
                 console.error(`Geolocation error: ${error.message}`);
